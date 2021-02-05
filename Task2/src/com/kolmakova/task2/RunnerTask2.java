@@ -1,0 +1,82 @@
+package com.kolmakova.task2;
+
+public class RunnerTask2 {
+    public static void launch() {
+        OneDimensionalArray oneDimensionalArray = new OneDimensionalArray();
+        TwoDimensionalArray twoDimensionalArray= new TwoDimensionalArray();
+        Sorting sorting=new Sorting();
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
+        System.out.println("ONE DIMENSIONAL ARRAY");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
+        System.out.println("Exercise 1:");
+        oneDimensionalArray.determineSumOfMultiplesOfElements(3);
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 2:");
+        oneDimensionalArray.replacingWithSpecifiedNumberAndCountReplacements(4);
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 3:");
+        oneDimensionalArray.countNegativePositiveZeroElements();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 4:");
+        oneDimensionalArray.printSwappedArray();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 5:");
+        oneDimensionalArray.printArrayWhereElementGreaterThanIndex();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 6:");
+        oneDimensionalArray.defineSumOfNumbersWhoseOrdinalNumbersArePrime();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 7:");
+        oneDimensionalArray.printMax();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 8:");
+        oneDimensionalArray.printSequences();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 9:");
+        oneDimensionalArray.printTheMostFrequentlyOccurringNumbers();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 10:");
+        oneDimensionalArray.printCompressedArray();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
+        System.out.println("TWO DIMENSIONAL ARRAY");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
+        System.out.println("Exercise 1:");
+        twoDimensionalArray.displayMatrixAndOddColumnsWhereFirstElemLargerThanLast();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 2:");
+        twoDimensionalArray.displayMatrixAndElementsStandingOnTheDiagonal();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 3:");
+        twoDimensionalArray.displayMatrixRowColumn();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 7:");
+        twoDimensionalArray.displayTheOriginalMatrixAndMatrixOfOrderN(6);
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 8:");
+        twoDimensionalArray.displayMatrixAndColumnsInSomePlaces();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 9:");
+        twoDimensionalArray.displayMatrixAndColumnThatContainsTheMaxAmount();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 10:");
+        twoDimensionalArray.displayMatrixAndPositiveElementsOfTheMainDiagonal();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
+        System.out.println("SORTING");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
+        System.out.println("Exercise 1:");
+        sorting.displayTwoOneDimensionalArraysAndCombinedArray();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 3:");
+        sorting.displayOriginalAndSortBySelectionArrays();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 4:");
+        sorting.displayOriginalAndSortByExchangeArrays();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 5:");
+        sorting.defineSortByInsertArray();
+
+
+    }
+}

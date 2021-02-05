@@ -1,0 +1,71 @@
+package com.kolmakova.task1;
+import com.kolmakova.utility.Utility;
+
+public class RunnerTask1 {
+
+    public static void launch() {
+        LinearProgram linearprogram = new LinearProgram();
+        Branching branching = new Branching();
+        Cycle cycle = new Cycle();
+        System.out.println("-----------------------LINEAR PROGRAM----------------------- ");
+        System.out.println("Exercise 1: ");
+        linearprogram.findFunctionValue(12.90, 1, 1.05);
+        Utility.printSeparator();
+        System.out.println("Exercise 2: ");
+        linearprogram.evaluateExpressionValue(12.34f,34.5f,11.3f);
+        Utility.printSeparator();
+        System.out.println("Exercise 3: ");
+        linearprogram.calculateValueOfTrigonometricExpression(1.13f,1.6f,0.5f,0.4f);
+        Utility.printSeparator();
+        System.out.println("Exercise 4: ");
+        linearprogram.swapPartsOfNumber(666.432);
+        Utility.printSeparator();
+        System.out.println("Exercise 5: ");
+        linearprogram.convertTimeFromSeconds(3602);
+        Utility.printSeparator();
+        System.out.println("Exercise 6: ");
+        linearprogram.showPointsBelonging(1,3);
+        Utility.printSeparator();
+        System.out.println("-------------------------BRANCHING ---------------------------- ");
+        System.out.println("Exercise 1: ");
+        branching.printDefinitionOfTriangle(20,90);
+        Utility.printSeparator();
+        System.out.println("Exercise 2: ");
+        branching.getMaxNumberOfTwoMinNumbers(1,2,3,4);
+        Utility.printSeparator();
+        System.out.println("Exercise 3: ");
+        branching.determineCollinearOfLines(2.1f,3.0f,1.1f,1.0f,1.2f,4.1f);
+        Utility.printSeparator();
+        System.out.println("Exercise 4: ");
+        branching.determineBrickPassing(4.0f,5.0f,5.0f,6.1f,3.1f);
+        Utility.printSeparator();
+        System.out.println("Exercise 5: ");
+        branching.getFunctionValue(5);
+        Utility.printSeparator();
+        System.out.println("-----------------------------CYCLE--------------------------------");
+        System.out.println("Exercise 1: ");
+        cycle.sumsNumbers();
+        Utility.printSeparator();
+        System.out.println("Exercise 2: ");
+        cycle.getFunctionValue(1,4,1);
+        Utility.printSeparator();
+        System.out.println("Exercise 3: ");
+        cycle.getSumOfSquares();
+        Utility.printSeparator();
+        System.out.println("Exercise 4: ");
+        cycle.getMultiplicationSquares();
+        Utility.printSeparator();
+        System.out.println("Exercise 5: ");
+        cycle.getNumberOfMembers(0.34f,2);
+        Utility.printSeparator();
+        System.out.println("Exercise 6: ");
+        cycle.getASCIITable();
+        Utility.printSeparator();
+        System.out.println("Exercise 7: ");
+        cycle.getDivider(2,5);
+        Utility.printSeparator();
+        System.out.println("Exercise 8: ");
+        cycle.identifyCommonDigits(123,1236);
+        Utility.printSeparator();
+    }
+}
