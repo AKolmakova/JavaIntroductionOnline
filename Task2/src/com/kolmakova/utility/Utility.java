@@ -1,5 +1,6 @@
 package com.kolmakova.utility;
 
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,7 +17,7 @@ public class Utility {
     public static int[] getIntArrayElements() {
         int randomNumber;
         int[] array = new int[COLUMN];
-        Random rand = new Random();
+        Random rand = new Random(10);
         for (int i = 0; i < COLUMN; i++) {
             randomNumber = rand.nextInt(COLUMN);
             array[i] = randomNumber;
@@ -76,6 +77,20 @@ public class Utility {
         }
     }
 
+    public static int[] getPoints(){
+        int randomNumber;
+        int col=3;
+        int[] arr = new int[col];
+        Random rand = new Random();
+        for (int i = 0; i < col; i++) {
+            randomNumber = rand.nextInt(col);
+            arr[i] = randomNumber;
+        }
+
+        return arr;
+    }
+
+
     public static int readIntNumber(String message) {
         while (true) {
             System.out.println(message);
@@ -85,6 +100,13 @@ public class Utility {
                 System.out.println("Enter positive integer!");
             }
         }
+    }
+
+    public static void printArrayList(List<Integer> list){
+        for (Integer integer : list) {
+            System.out.print(integer + ", ");
+        }
+        System.out.println();
     }
 }
 

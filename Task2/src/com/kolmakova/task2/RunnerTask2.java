@@ -1,10 +1,14 @@
 package com.kolmakova.task2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RunnerTask2 {
     public static void launch() {
         OneDimensionalArray oneDimensionalArray = new OneDimensionalArray();
         TwoDimensionalArray twoDimensionalArray= new TwoDimensionalArray();
         Sorting sorting=new Sorting();
+        Decomposition decomposition=new Decomposition();
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
         System.out.println("ONE DIMENSIONAL ARRAY");
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
@@ -50,6 +54,15 @@ public class RunnerTask2 {
         System.out.println("Exercise 3:");
         twoDimensionalArray.displayMatrixRowColumn();
         System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 4:");
+        twoDimensionalArray.makeFirstMatrixBySample();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 5:");
+        twoDimensionalArray.makeSecondMatrixBySample();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 6:");
+        twoDimensionalArray.makeThirdMatrixBySample();
+        System.out.println("----------------------------------------------------------------------------------");
         System.out.println("Exercise 7:");
         twoDimensionalArray.displayTheOriginalMatrixAndMatrixOfOrderN(6);
         System.out.println("----------------------------------------------------------------------------------");
@@ -61,6 +74,21 @@ public class RunnerTask2 {
         System.out.println("----------------------------------------------------------------------------------");
         System.out.println("Exercise 10:");
         twoDimensionalArray.displayMatrixAndPositiveElementsOfTheMainDiagonal();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 11:");
+        twoDimensionalArray.getInfoAboutMatrix();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 12:");
+        twoDimensionalArray.printInfoAboutMatrixWithSortedRowsInAscAndDescOrder();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 14:");
+        twoDimensionalArray.printRandomMatrix();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 15:");
+        twoDimensionalArray.getInfoAboutTheLargestElementOfMatrixAndReplaceOddElementsWithIt();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 16:");
+        twoDimensionalArray.createMagicSquare(3);
         System.out.println("----------------------------------------------------------------------------------");
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
         System.out.println("SORTING");
@@ -76,7 +104,84 @@ public class RunnerTask2 {
         System.out.println("----------------------------------------------------------------------------------");
         System.out.println("Exercise 5:");
         sorting.defineSortByInsertArray();
-
-
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 6:");
+        sorting.shellSort();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 7:");
+        List<Integer> in = new ArrayList<>() {
+            {
+                add(1);
+                add(2);
+                add(3);
+                add(7);
+                add(10);
+                add(11);
+            }
+        };
+        List<Integer> from = new ArrayList<>() {
+            {
+                add(8);
+                add(32);
+                add(64);
+                add(89);
+                add(99);
+            }
+        };
+        sorting.insertSequence(in,from);
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 8:");
+        sorting.defineCommonDenominators();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
+        System.out.println("DECOMPOSITION");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*");
+        System.out.println("Exercise 1:");
+        decomposition.defineNOKAnDNOD();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 2:");
+        decomposition.defineNODOfFourNumbers();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 3:");
+        decomposition.defineAreaOfHexagon();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 5:");
+        decomposition.defineInfoAboutSecondLargestNumber();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 6:");
+        decomposition.checkIfNumbersAreCoprime();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 7:");
+        decomposition.getSumOfFactorials();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 8:");
+        decomposition.defineInfoAboutConsecutiveElements();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 9:");
+        decomposition.defineInfoAboutQuadrangle();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 11:");
+        decomposition.defineNumberWithMoreDigits();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 12:");
+        decomposition.defineArrayOfNumbers();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 13:");
+        decomposition.getTwinsNumbers();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 14:");
+        decomposition.getArmstrongNumbers();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 15:");
+        decomposition.getNumbersFormingStrictlyAscendingSequence();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 16:");
+        decomposition.getSumOfOddNumbers();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Exercise 17:");
+        decomposition.getDeductedSumOfDigitsFromNumber();
+        System.out.println("----------------------------------------------------------------------------------");
     }
-}
+    }
+
+
